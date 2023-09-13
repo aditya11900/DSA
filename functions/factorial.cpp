@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int findingFactorial(int factorial){
-    int fact=1;
+     int fact=1;
     for(int i=1; i<=factorial; i++){
         fact= fact*i;
     }
