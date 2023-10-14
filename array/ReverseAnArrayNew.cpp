@@ -11,14 +11,6 @@ for(int start=0;start <= end; start++,end--){
 swap(arr[start] , arr[end]);
 }
 }
-
-void ReverseArray(int arr[], int size) {
-    for (int i = 0; i < size / 2; i++) {
-        // Swap elements at index i and (size - 1 - i)
-        swap(arr[i], arr[size - 1 - i]);
-    }
-}
-
 int main(){
     int arr[6]={0,1,2,3,4,8};
     int n = 6;
@@ -33,12 +25,6 @@ int main(){
 cout<<"after reversing the array ";
 
     ReverseArr(arr, n);
-    for(int i= 0; i<n; i++){
-        cout<<arr[i]<<" ";
-    }
-cout<<endl<<"anotherWay ";
-
-       ReverseArray(arr, n);
     for(int i= 0; i<n; i++){
         cout<<arr[i]<<" ";
     }
