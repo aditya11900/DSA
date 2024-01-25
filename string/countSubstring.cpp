@@ -5,9 +5,9 @@ using namespace std;
 
 class Solution {
 public:
-    int expand(string s, int i, int j){
+    int expand(string s, size_t i, size_t j){
         int count = 0;
-        while(i >= 0 && j < s.length() && s[i] == s[j]){
+        while(i < s.length() && j < s.length() && s[i] == s[j]){
             i--;
             j++;
             count++;
@@ -17,7 +17,7 @@ public:
 
     int countSubstrings(string s) {
         int totalCount = 0;
-        for(int center = 0; center < s.length(); center++){
+        for(size_t center = 0; center < s.length(); center++){
             int oddKaAns = expand(s, center, center);
             int evenKaAns = expand(s, center, center + 1);
             
