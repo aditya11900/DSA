@@ -32,7 +32,6 @@ int main() {
     string input = "aaa";
     int result = sol.countSubstrings(input);
     cout << "Number of palindromic substrings: " << result << endl;
-
     return 0;
 
 //for function
